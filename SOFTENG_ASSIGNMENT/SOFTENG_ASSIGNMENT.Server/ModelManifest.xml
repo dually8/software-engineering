@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="c:\users\cjcoffey\documents\visual studio 2013\Projects\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.Server\DataSources\ApplicationData\UsersSet.lsml" Checksum="05741C992A8B53236ADB0404ADE49727661066BC1D3092D7889AFF4629AAA540" />
+    <Document FullPath="c:\users\cjcoffey\documents\visual studio 2013\Projects\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.Server\Properties\DataSources\ApplicationData.lsml" Checksum="986A4E2C3BC71E61B26C49DBB7451F9203AA85AB5825740AC6E35E7095E0722C" />
+    <Document FullPath="c:\users\cjcoffey\documents\visual studio 2013\Projects\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.Server\Properties\Service.lsml" Checksum="679C78F29C5AF23E9956A773B0E46DF90F7B86CADA0B79571E5896A1C79F5B70" />
+  </Documents>
+</ModelDocumentManifest>

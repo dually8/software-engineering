@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{581633EB-B896-402F-8E60-36F3DA191C85}") = "SOFTENG_ASSIGNMENT", "SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.lsxtproj", "{03DDAD2B-A89D-4540-845B-D61A1B8A35DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOFTENG_ASSIGNMENT.Server", "SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.Server\SOFTENG_ASSIGNMENT.Server.csproj", "{8E3EC358-4F54-4B33-9042-9BC207F6E3AE}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "SOFTENG_ASSIGNMENT.HTMLClient", "SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.HTMLClient\SOFTENG_ASSIGNMENT.HTMLClient.jsproj", "{7A289CA8-C6E9-4BB9-B3B8-D8E64E2EDB97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03DDAD2B-A89D-4540-845B-D61A1B8A35DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03DDAD2B-A89D-4540-845B-D61A1B8A35DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03DDAD2B-A89D-4540-845B-D61A1B8A35DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03DDAD2B-A89D-4540-845B-D61A1B8A35DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E3EC358-4F54-4B33-9042-9BC207F6E3AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E3EC358-4F54-4B33-9042-9BC207F6E3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E3EC358-4F54-4B33-9042-9BC207F6E3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E3EC358-4F54-4B33-9042-9BC207F6E3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A289CA8-C6E9-4BB9-B3B8-D8E64E2EDB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A289CA8-C6E9-4BB9-B3B8-D8E64E2EDB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A289CA8-C6E9-4BB9-B3B8-D8E64E2EDB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A289CA8-C6E9-4BB9-B3B8-D8E64E2EDB97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

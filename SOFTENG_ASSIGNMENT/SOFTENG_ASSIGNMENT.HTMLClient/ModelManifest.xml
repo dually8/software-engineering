@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="c:\users\cjcoffey\documents\visual studio 2013\Projects\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.HTMLClient\Properties\Client.lsml" Checksum="6B3A70ECF50F828582BFC86E1040823650633405B715464FD68BDFECAF0EAC04" />
+    <Document FullPath="c:\users\cjcoffey\documents\visual studio 2013\Projects\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.HTMLClient\Properties\Proxies.lsml" Checksum="0EA034F13104F9A0D6835C5686B01A85081DF65CDFCDE26B768F5356F06C721D" />
+    <Document FullPath="c:\users\cjcoffey\documents\visual studio 2013\Projects\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.HTMLClient\Screens\LoginPage.lsml" Checksum="57B67406AB6BE52D0C66F320E4AE76539DD8A5DCD9C911C4F57F4D50468CFE89" />
+    <Document FullPath="c:\users\cjcoffey\documents\visual studio 2013\Projects\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.HTMLClient\Screens\RegisterPage.lsml" Checksum="30E5D890E295BE5BB7D2E058D9CCED8735CF7619550E733DB7313DEE5E858F46" />
+  </Documents>
+</ModelDocumentManifest>
