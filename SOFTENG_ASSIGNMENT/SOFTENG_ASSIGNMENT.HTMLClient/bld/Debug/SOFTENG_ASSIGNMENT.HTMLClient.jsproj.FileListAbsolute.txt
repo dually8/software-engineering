@@ -1,2 +1,4 @@
 c:\users\cjcoffey\documents\visual studio 2013\Projects\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
 c:\users\cjcoffey\documents\visual studio 2013\Projects\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\TinyCJ\Repos\software-engineering\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\TinyCJ\Repos\software-engineering\SOFTENG_ASSIGNMENT\SOFTENG_ASSIGNMENT.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs

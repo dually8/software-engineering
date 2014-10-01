@@ -12,7 +12,7 @@ myapp.LoginPage.Submit_execute = function (screen) {
         });
 
         console.log("user: " + user[0].Username + "\tPassword" + user[0].Password);
-        
+      
         if (user[0] != undefined || user[0] != null) {
             //window.alert("Found user: " + user[0].Username);
             myapp.showRegisterPage(user[0]);

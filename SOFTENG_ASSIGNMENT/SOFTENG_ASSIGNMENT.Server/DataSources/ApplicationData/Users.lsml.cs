@@ -14,9 +14,9 @@ namespace LightSwitchApplication
             {
                 results.AddPropertyError("Password must be between 8 and 12 characters");
             }
-            if (!System.Text.RegularExpressions.Regex.IsMatch(this.Password, (@"[A-Z]+")) &&
-                !System.Text.RegularExpressions.Regex.IsMatch(this.Password, (@"[0-9]+")) &&
-                !System.Text.RegularExpressions.Regex.IsMatch(this.Password, (@"(!|#|%|\*)+")))
+            if (!(System.Text.RegularExpressions.Regex.IsMatch(this.Password, (@"[A-Z]+")) &&
+                System.Text.RegularExpressions.Regex.IsMatch(this.Password, (@"[0-9]+")) &&
+                System.Text.RegularExpressions.Regex.IsMatch(this.Password, (@"(!|#|%|\*)+"))))
             {
                 results.AddPropertyError("Password must contain at least one uppercase character, one digit, and one special character (!, #, %, *)");
             }
