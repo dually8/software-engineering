@@ -19,8 +19,11 @@ Thumbs.db
 *.cache
 *.ilk
 *.log
-[Bb]in
-[Dd]ebug*/
+*.mdf
+*[Bb]in*
+*[Dd]ebug*/
+**/bin/Debug/
+**/bin/Release/
 *.lib
 *.sbr
 obj/

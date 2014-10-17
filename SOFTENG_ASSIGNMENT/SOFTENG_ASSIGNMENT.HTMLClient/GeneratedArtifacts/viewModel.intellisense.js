@@ -4,6 +4,118 @@
 
     var $element = document.createElement("div");
 
+    lightSwitchApplication.BrowseUsersSet.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseUsersSet
+        },
+        UsersList: {
+            _$class: msls.ContentItem,
+            _$name: "UsersList",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.BrowseUsersSet,
+            data: lightSwitchApplication.BrowseUsersSet,
+            value: lightSwitchApplication.BrowseUsersSet
+        },
+        UsersSet: {
+            _$class: msls.ContentItem,
+            _$name: "UsersSet",
+            _$parentName: "UsersList",
+            screen: lightSwitchApplication.BrowseUsersSet,
+            data: lightSwitchApplication.BrowseUsersSet,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.BrowseUsersSet,
+                _$entry: {
+                    elementType: lightSwitchApplication.Users
+                }
+            }
+        },
+        rows: {
+            _$class: msls.ContentItem,
+            _$name: "rows",
+            _$parentName: "UsersSet",
+            screen: lightSwitchApplication.BrowseUsersSet,
+            data: lightSwitchApplication.Users,
+            value: lightSwitchApplication.Users
+        },
+        Username: {
+            _$class: msls.ContentItem,
+            _$name: "Username",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseUsersSet,
+            data: lightSwitchApplication.Users,
+            value: String
+        },
+        EmailAddress: {
+            _$class: msls.ContentItem,
+            _$name: "EmailAddress",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseUsersSet,
+            data: lightSwitchApplication.Users,
+            value: String
+        },
+        Password: {
+            _$class: msls.ContentItem,
+            _$name: "Password",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseUsersSet,
+            data: lightSwitchApplication.Users,
+            value: String
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseUsersSet
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.BrowseUsersSet, {
+        /// <field>
+        /// Called when a new BrowseUsersSet screen is created.
+        /// <br/>created(msls.application.BrowseUsersSet screen)
+        /// </field>
+        created: [lightSwitchApplication.BrowseUsersSet],
+        /// <field>
+        /// Called before changes on an active BrowseUsersSet screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.BrowseUsersSet screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.BrowseUsersSet],
+        /// <field>
+        /// Called after the UsersList content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UsersList_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("UsersList"); }],
+        /// <field>
+        /// Called after the UsersSet content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UsersSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("UsersSet"); }],
+        /// <field>
+        /// Called after the rows content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("rows"); }],
+        /// <field>
+        /// Called after the Username content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Username_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("Username"); }],
+        /// <field>
+        /// Called after the EmailAddress content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        EmailAddress_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("EmailAddress"); }],
+        /// <field>
+        /// Called after the Password content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Password_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("Password"); }]
+    });
+
     lightSwitchApplication.LoginPage.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
@@ -290,118 +402,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Admin_postRender: [$element, function () { return new lightSwitchApplication.RegisterPage().findContentItem("Admin"); }]
-    });
-
-    lightSwitchApplication.BrowseUsersSet.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.BrowseUsersSet
-        },
-        UsersList: {
-            _$class: msls.ContentItem,
-            _$name: "UsersList",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.BrowseUsersSet,
-            data: lightSwitchApplication.BrowseUsersSet,
-            value: lightSwitchApplication.BrowseUsersSet
-        },
-        UsersSet: {
-            _$class: msls.ContentItem,
-            _$name: "UsersSet",
-            _$parentName: "UsersList",
-            screen: lightSwitchApplication.BrowseUsersSet,
-            data: lightSwitchApplication.BrowseUsersSet,
-            value: {
-                _$class: msls.VisualCollection,
-                screen: lightSwitchApplication.BrowseUsersSet,
-                _$entry: {
-                    elementType: lightSwitchApplication.Users
-                }
-            }
-        },
-        rows: {
-            _$class: msls.ContentItem,
-            _$name: "rows",
-            _$parentName: "UsersSet",
-            screen: lightSwitchApplication.BrowseUsersSet,
-            data: lightSwitchApplication.Users,
-            value: lightSwitchApplication.Users
-        },
-        Username: {
-            _$class: msls.ContentItem,
-            _$name: "Username",
-            _$parentName: "rows",
-            screen: lightSwitchApplication.BrowseUsersSet,
-            data: lightSwitchApplication.Users,
-            value: String
-        },
-        EmailAddress: {
-            _$class: msls.ContentItem,
-            _$name: "EmailAddress",
-            _$parentName: "rows",
-            screen: lightSwitchApplication.BrowseUsersSet,
-            data: lightSwitchApplication.Users,
-            value: String
-        },
-        Password: {
-            _$class: msls.ContentItem,
-            _$name: "Password",
-            _$parentName: "rows",
-            screen: lightSwitchApplication.BrowseUsersSet,
-            data: lightSwitchApplication.Users,
-            value: String
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.BrowseUsersSet
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.BrowseUsersSet, {
-        /// <field>
-        /// Called when a new BrowseUsersSet screen is created.
-        /// <br/>created(msls.application.BrowseUsersSet screen)
-        /// </field>
-        created: [lightSwitchApplication.BrowseUsersSet],
-        /// <field>
-        /// Called before changes on an active BrowseUsersSet screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.BrowseUsersSet screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.BrowseUsersSet],
-        /// <field>
-        /// Called after the UsersList content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UsersList_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("UsersList"); }],
-        /// <field>
-        /// Called after the UsersSet content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UsersSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("UsersSet"); }],
-        /// <field>
-        /// Called after the rows content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("rows"); }],
-        /// <field>
-        /// Called after the Username content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Username_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("Username"); }],
-        /// <field>
-        /// Called after the EmailAddress content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        EmailAddress_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("EmailAddress"); }],
-        /// <field>
-        /// Called after the Password content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Password_postRender: [$element, function () { return new lightSwitchApplication.BrowseUsersSet().findContentItem("Password"); }]
     });
 
 }(msls.application));
